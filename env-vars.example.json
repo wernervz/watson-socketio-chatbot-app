@@ -1,0 +1,7 @@
+{
+    "ASSISTANT_API_USERNAME": {"expr": "Watson Assistant.*", "field":"credentials.username"},
+    "ASSISTANT_API_PASSWORD": {"expr": "Watson Assistant.*", "field":"credentials.password"},
+    "ASSISTANT_WORKSPACE_ID": "",
+    "WEATHER_API_USERNAME": {"expr": "Weather Company.*", "field":"credentials.username"},
+    "WEATHER_API_PASSWORD": {"expr": "Weather Company.*", "field":"credentials.password"}
+}

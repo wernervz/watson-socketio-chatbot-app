@@ -1,0 +1,26 @@
+<div *ngIf="utterance.type === 'text'" class="bubble" [ngClass]="utterance.who" [@flyIn]="utterance.who">
+  <p>{{utterance.message}}</p>
+  <div *ngIf="utterance.result_score > 0" class="progress-container">
+      <p><ngb-progressbar type="success" [value]="utterance.result_score"></ngb-progressbar></p>
+      <p class="progress-caption pull-right">Score</p>
+  </div>
+  <div *ngIf="utterance.more" class="more-container">
+    <p class="more">
+      <i class="fa fa-plus-square" aria-hidden="true"></i> More Results
+    </p>
+  </div>
+</div>
+<div *ngIf="utterance.type === 'html'" class="bubble" [ngClass]="utterance.who" [@flyIn]="utterance.who">
+  <div [innerHtml]="utterance.message"></div>
+  <div *ngIf="utterance.more">
+    <p class="more">
+        <i class="fa fa-plus-square" aria-hidden="true"></i> More Results
+      </p>
+    </div>
+</div>
+<div *ngIf="utterance.type === 'choice'" class="bubble" [ngClass]="utterance.who" [@flyIn]="utterance.who">
+  <p>{{utterance.message}}</p>
+  <div class="choice-container">
+    <button *ngFor="let choice of utterance.choices; let i = index" type="button" class="btn btn-primary btn-sm m-1" (click)="onChoice(choice.value)" [attr.autofocus]="i===0 ? '' : null">{{choice.text}}</button>
+  </div>
+</div>

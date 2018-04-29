@@ -1,0 +1,5 @@
+<div class="transcript" #transcript>
+  <div *ngFor="let utterance of this.chatControl.conversation">
+      <chat-bubble [utterance]="utterance"></chat-bubble>
+  </div>
+</div>

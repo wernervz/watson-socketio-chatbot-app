@@ -1,0 +1,74 @@
+.bubble {
+    line-height: 100%;
+    display: block;
+    position: relative;
+    padding:8px 9px 8px 9px;
+    margin-bottom: 0.7em;
+    clear: both;
+    max-width:85%;
+    line-height: 120%;
+    font-size:12px;
+    font-family: "Helvetica Neue",Helvetica,"Open Sans",Arial,"Lucida Grande",Roboto,sans-serif;
+    font-weight: normal;
+}
+
+p {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.watson {
+    float: left;
+    margin-right:5%;
+    background-color:#E3E6E8;
+    color:#263238;
+    border-radius:10px 10px 10px 0px;
+}
+
+.human {
+    float:right;
+    margin-left:5%;
+    background-color:#4178be;
+    color:white;
+    border-radius:10px 10px 0px 10px;
+}
+
+.btn {
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.more {
+    font-size: 8px;
+    cursor: pointer;
+    &:hover {
+        color: #D867EF;
+        font-size: 9px;
+    }
+    transition: 0.3s all
+}
+
+:host /deep/ div.progress {
+    background-color: #d1c4e9 !important;
+    height: 5px !important; 
+}
+
+:host /deep/ div.progress-bar.bg-success {
+    background-color: #673ab7 !important;
+}
+
+.progress-caption {
+    font-size: 8px;
+}
+
+.choice-container {
+    margin-top: 5px;
+}
+
+.progress-container {
+    margin-top: 5px;
+}
+
+.more-container {
+    margin-top: 5px;
+}

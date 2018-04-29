@@ -1,0 +1,35 @@
+.chat-input {
+  border: none;
+  border-bottom: 1px solid #CCC;
+  border-radius:0px;
+  border-bottom: 2px solid #4479bc;
+  margin-bottom: 1px;
+  width: 100%;
+  padding:10px;
+  font-size:12px;
+  box-shadow: none;
+
+  &:focus {
+    outline: none;    
+  }
+}
+  
+.chat-input:focus {
+  border-bottom: 3px solid #4178be;
+  margin-bottom: 0px;
+  outline: none;
+}
+
+.send-button {
+  background-color:transparent;
+  border:none;
+  padding:0px;
+  padding-right: 20px;
+  padding-left: 15px;
+}
+
+.send-icon {
+  color: #4178be;
+  font-size: 140%;
+  cursor: pointer;
+}

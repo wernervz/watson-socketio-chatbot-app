@@ -1,0 +1,45 @@
+{
+    "weatherinsights": [
+        {
+            "credentials": {
+                "username": "",
+                "password": "",
+                "host": "twcservice.mybluemix.net",
+                "port": 443,
+                "url": "https://f7662202-277f-4171-8f50-e771bfbfa109:bZPXDW6Fsw@twcservice.mybluemix.net"
+            },
+            "syslog_drain_url": null,
+            "volume_mounts": [],
+            "label": "weatherinsights",
+            "provider": null,
+            "plan": "Free-v2",
+            "name": "Weather Company Data-1h",
+            "tags": [
+                "big_data",
+                "ibm_created",
+                "ibm_dedicated_public"
+            ]
+        }
+    ],
+    "conversation": [
+        {
+            "credentials": {
+                "url": "https://gateway.watsonplatform.net/assistant/api",
+                "username": "",
+                "password": ""
+            },
+            "syslog_drain_url": null,
+            "volume_mounts": [],
+            "label": "conversation",
+            "provider": null,
+            "plan": "standard",
+            "name": "cartridges-Conversation-3",
+            "tags": [
+                "watson",
+                "ibm_created",
+                "ibm_dedicated_public",
+                "lite"
+            ]
+        }
+    ]
+}

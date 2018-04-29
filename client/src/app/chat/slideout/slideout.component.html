@@ -1,0 +1,18 @@
+<div class="chat-slideout" [ngClass]="chatState" [@slideoutAnimation]="chatState">
+    <div class="chat-header">
+        <h5>
+            <a href="javascript:void(0)" #refresh (click)="onRefreshClick()"><img src="assets/img/watson_w.png" /></a> {{appConfig.chat_title}}
+            <a class="options pull-right" href="javascript:void(0)" (click)="onCloseClick()">
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </a>
+        </h5>
+
+    </div>
+    <div class="transcript-container">
+        <chat-transcript></chat-transcript>
+    </div>
+    <chat-tone-gauge></chat-tone-gauge>
+    <div class="chat-input-container">
+        <chat-input></chat-input>
+    </div>
+</div>

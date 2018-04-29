@@ -1,0 +1,12 @@
+<form autocomplete="off" #chatInputForm>
+  <div class="input-group">
+    <input #chatInput [(ngModel)]="text" (keypress)="emitKeyPress($event)" type="text" name="chatInput"
+      class="form-control chat-input" placeholder="Message..." autocomplete="off" autofocus>
+    <span class="input-group-btn">
+      <button type="button" class="btn btn-default send-button" aria-label="Left Align" (click)="emitSendMessage()" [disabled]="!text"
+        id="sendButton">
+        <i class="fa fa-arrow-circle-o-up send-icon" aria-hidden="true"></i>
+      </button>
+    </span>
+  </div>
+</form>

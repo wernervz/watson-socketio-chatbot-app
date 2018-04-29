@@ -1,0 +1,7 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory",
+    "file": "mem_db.json"
+  }
+}

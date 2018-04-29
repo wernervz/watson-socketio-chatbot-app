@@ -1,0 +1,39 @@
+<div class="container-fluid">
+  <div *ngIf="isError" class="alert alert-danger">
+    {{errorMsg}}
+  </div>
+    <div class="row align-items-center h-100">
+    <div class="col-lg-4 col-md-8 col-sm-12 m-auto">
+      <div class="card align-self-center">
+        <div class="card-header">
+          <strong> Sign in to continue</strong>
+        </div>
+        <div class="card-body">
+          <form #loginForm="ngForm" (ngSubmit)="submitLogin()">
+            <fieldset>
+              <div class="form-group">
+                <div class="input-group">
+                  <span class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1"><i class="fa fa-user"></i></span>
+                  </span>
+                  <input [(ngModel)]="credentials.username" #username="ngModel" class="form-control" placeholder="Username" id="username" name="username" type="text" autofocus required>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-group">
+                  <span class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1"><i class="fa fa-lock"></i></span>
+                  </span>
+                  <input [(ngModel)]="credentials.password" #password="ngModel" class="form-control" placeholder="Password" id="password" name="password" type="password" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <input type="submit" class="btn btn-lg btn-primary btn-block" value="Sign in" [disabled]="!loginForm.valid">
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
