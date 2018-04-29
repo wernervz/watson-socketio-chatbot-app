@@ -9,8 +9,7 @@ module.exports = function (app, done) {
   var AccessToken = app.models.AccessToken
 
   var defaultUsers = [
-      { username: 'watson', email: 'watson@ibm.com', password: 'p@ssw0rd' },
-      { username: 'admin', email: 'admin@ibm.com', password: '@dm1n!', roles: [ 'admin' ] }
+      { username: 'guest', email: 'watson@ibm.com', password: 'p@ssw0rd' }
   ]
 
   var defaultRoles = [

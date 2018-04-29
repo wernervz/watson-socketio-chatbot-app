@@ -44,7 +44,7 @@ Once the app is succeffully deployed, access the chatbot with the application ur
 7. Run `npm install` from the application root folder.
 8. Run `npm run develop` to run the application and load the app into the browser.
 
-### The default Username is `watson` and the password is `p@ssw0rd`
+### The default Username is `guest` and the password is `p@ssw0rd`
 
 ## Testing
 
